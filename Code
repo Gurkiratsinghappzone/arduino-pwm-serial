@@ -1,0 +1,87 @@
+/*Code credit to gurkirat7092@yahoo.com
+ * this is my project on serial reading
+ * 
+ */
+int led = 9;    //mention here the pin number
+//Note:use only pwm pins 
+//for example in arduino uno ,digital pin 3,5,6,9,10,11 are pwm pins
+       
+int brightness = 0;  
+//this will store how bright the led will be 
+void setup() {
+  Serial.begin(9600);
+  
+  pinMode(led, OUTPUT);
+  //we are defining that pin 9 is output pin
+  //in first line we given pin 9 name as led
+}
+
+
+void loop() {
+  if (Serial.available()>0)
+  {char val = Serial.read(); 
+
+
+if (val=='9')
+{brightness=255;
+Serial.println("The led is at 100% brightness");
+} 
+if (val=='8')
+{brightness=225;
+Serial.println("The led is at 88.141% brightness");
+} 
+if (val=='7')
+{brightness=200;
+Serial.println("The led is at 78.119% brightness");
+} 
+if (val=='6')
+{brightness=175;
+Serial.println("The led is at 68.627% brightness");
+} 
+if (val=='5')
+{brightness=140;
+Serial.println("The led is at 54.901% brightness");
+} 
+if (val=='4')
+{brightness=100;
+Serial.println("The led is at 39.215% brightness");
+} 
+if (val=='3')
+{brightness=75;
+Serial.println("The led is at 29.411% brightness");
+} 
+if (val=='2')
+{brightness=50;
+Serial.println("The led is at 19.607% brightness");
+} 
+if (val=='1') 
+{brightness=25;
+Serial.println("The led is at 9.803% brightness");
+}
+if (val=='0')
+{brightness =0;
+Serial.println("The led is at 0% brightness");
+}
+
+
+
+
+  
+  }
+  
+   analogWrite(led, brightness);
+}
+/*The code finshes here , now you have to upload it 
+ * after uploading , open the serial monitor and write 1,2,3,4,5,6,7,8,9,0
+ * enter only one number at a time
+ * Having any problem, email me at gurkirat7092@yahoo.com
+ * 
+ *
+ * 
+ */
+
+
+  // yes , i am weak in English 
+ 
+
+  
