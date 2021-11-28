@@ -8,3 +8,8 @@ Things Required :
 5. Arduino IDE
 Open the below link for circuit diagram
 https://drive.google.com/file/d/1HAKdRBAGkTb3drTQaSxpNjdKRLKJ6PPB/view?usp=drivesdk
+after making the circuit, now you have to upload the code which is present in code file 
+ * after uploading , open the serial monitor and write 1,2,3,4,5,6,7,8,9,0
+ * enter only one number at a time
+ * that's it 
+ * Having any problem, email me at gurkirat7092@yahoo.com
