@@ -6,6 +6,7 @@ Things Required :
 3. Some jumper wires as per your requirement
 4. Breadboard (optional)
 5. Arduino IDE
+ 
 Open the below link for circuit diagram
 https://drive.google.com/file/d/1HAKdRBAGkTb3drTQaSxpNjdKRLKJ6PPB/view?usp=drivesdk
 after making the circuit, now you have to upload the code which is present in code file 
